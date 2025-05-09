@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="imagens/Hospital Blengers.png" alt="Logo da empresa" class="logo">
+        <h2>Cadastro de usuário</h2>
+        <form id="cadastroForm">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="telefone" placeholder="Telefone" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button type="button" onclick="cadastrarUsuario()">Cadastrar</button>
+        </form>
+
+        <a href="usuarios.html" class="link-usuarios">Ver usuários cadastrados</a>
+        
+    </div>
+
+    <div id="mensagem" class="mensagem oculto" onclick="fecharMensagem()"></div>
+    
+    <div id="redirecionar" class="oculto">
+        <p>Cadastro realizado com sucesso!</p>
+        <button onclick="irParaApp()">Ir para o app</button>
+    </div>
+
+    <script src="Js/cadastro.js"></script>
+
+</body>
+</html>
